@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Building, Upload, Library, Settings } from 'lucide-react';
@@ -12,8 +11,9 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
     <header className="w-full bg-white border-b border-gray-200 py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center space-x-2">
-          
-          <Link to="/" className="text-lg flex justify-center items-center gap-1 font-bold"><Building className="h-5 w-5" />EduVault</Link>
+          <Link to="/" className="text-lg flex justify-center items-center gap-1 font-bold">
+            <Building className="h-5 w-5" />EduVault
+          </Link>
         </div>
         
         <nav className="hidden md:flex space-x-6">
@@ -40,6 +40,12 @@ const Navbar: React.FC<NavbarProps> = ({ active }) => {
             className={`${active === 'manage' ? 'text-eduvault-pink' : 'text-gray-700'} hover:text-eduvault-pink`}
           >
             Manage Resources
+          </Link>
+          <Link 
+            to="/Faq" 
+            className="text-gray-700 hover:text-eduvault-pink"
+          >
+            FAQ
           </Link>
         </nav>
       </div>

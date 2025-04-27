@@ -15,6 +15,7 @@ import Profile from "./pages/Profile";
 import Tasks from "./pages/Tasks";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
+import Faq from "./pages/Faq";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/profile" element={<Profile />} />
             <Route path="/tasks" element={<Tasks />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/faq" element={<Faq />} />
           </Routes>
         </AuthProvider>
       </BrowserRouter>
