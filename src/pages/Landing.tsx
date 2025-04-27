@@ -72,10 +72,8 @@ const Landing = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                 <p className="text-gray-600 mb-2">
-                  EduVault Inc.<br />
-                  123 Academic Lane<br />
-                  Education City, EC 12345
-                </p>
+                  EduVault Inc.
+                  </p>
                 <p className="text-gray-600">
                   Email: <a href="mailto:support@eduvault.com" className="text-eduvault-pink hover:underline">support@eduvault.com</a>
                 </p>
